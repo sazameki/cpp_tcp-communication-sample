@@ -52,7 +52,6 @@ void _Log(const std::string& filepath, int lineNum, const char* format, ...)
     std::string str = FormatString("%s\t(%s:%d)\n", buffer, basename(filepath).c_str(), lineNum);
 #ifdef _WIN32
     OutputDebugStringA(str.c_str());
-#else
-    printf("%s", str.c_str());
 #endif
+    printf("%s", str.c_str());
 }
