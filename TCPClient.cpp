@@ -7,13 +7,20 @@
 
 #include "TCPClient.hpp"
 
-#include <unistd.h>
 #include <stdexcept>
+
+#ifdef _WIN32
+#include <winsock2.h>
+#include <WS2tcpip.h>
+#pragma comment( lib, "ws2_32.lib" )
+#else
+#include <unistd.h>
 #include <netdb.h>
 #include <arpa/inet.h>
 #include <netinet/tcp.h>
 #include <sys/types.h>
 #include <sys/socket.h>
+#endif
 
 
 static std::string FormatString(const char* format, ...)
@@ -21,7 +28,11 @@ static std::string FormatString(const char* format, ...)
     static char buffer[1024];
     va_list marker;
     va_start(marker,format);
+#if _WIN32
+    vsprintf_s(buffer, format, marker);
+#else
     vsprintf(buffer, format, marker);
+#endif
     va_end(marker);
     return buffer;
 }
@@ -51,7 +62,12 @@ TCPClient::TCPClient(const std::string& hostname_, int port_, bool useDelay)
     // ディレイなしの送信の設定
     if (!useDelay) {
         int noDelay = 1;
-        if (setsockopt(sock, IPPROTO_TCP, TCP_NODELAY, &noDelay, sizeof(noDelay)) == -1) {
+#ifdef _WIN32
+        const char *pOpt = (const char *)&noDelay;
+#else
+        const void *pOpt = (const void *)&noDelay;
+#endif
+        if (setsockopt(sock, IPPROTO_TCP, TCP_NODELAY, pOpt, sizeof(noDelay)) == -1) {
             Close();
             throw std::runtime_error("Failed to set a socket option (TCP_NODELAY).");
         }
@@ -128,7 +144,11 @@ void TCPClient::Close()
     if (isClosed) {
         return;
     }
+#ifdef _WIN32
+    closesocket(sock);
+#else
     close(sock);
+#endif
     sock = -1;
 }
 

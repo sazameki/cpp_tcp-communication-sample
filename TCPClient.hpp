@@ -10,7 +10,14 @@
 
 #include <queue>
 #include <string>
+
+#ifdef _WIN32
+#include <WinSock2.h>
+#include <BaseTsd.h>
+typedef SSIZE_T ssize_t;
+#else
 #include <netinet/in.h>
+#endif
 
 #define TCP_CLIENT_BUFFER_SIZE  1024
 
