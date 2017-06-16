@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8E04615C1EF3F6F500E89CD6 /* client_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0461591EF3F6F500E89CD6 /* client_main.cpp */; };
 		8E04615D1EF3F6F500E89CD6 /* TCPClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E04615A1EF3F6F500E89CD6 /* TCPClient.cpp */; };
+		8E0461601EF4026F00E89CD6 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E04615E1EF4026F00E89CD6 /* Debug.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		8E0461591EF3F6F500E89CD6 /* client_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = client_main.cpp; path = ../../client_main.cpp; sourceTree = "<group>"; };
 		8E04615A1EF3F6F500E89CD6 /* TCPClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TCPClient.cpp; path = ../../TCPClient.cpp; sourceTree = "<group>"; };
 		8E04615B1EF3F6F500E89CD6 /* TCPClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TCPClient.hpp; path = ../../TCPClient.hpp; sourceTree = "<group>"; };
+		8E04615E1EF4026F00E89CD6 /* Debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Debug.cpp; path = ../../Debug.cpp; sourceTree = "<group>"; };
+		8E04615F1EF4026F00E89CD6 /* Debug.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Debug.hpp; path = ../../Debug.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				8E0461591EF3F6F500E89CD6 /* client_main.cpp */,
 				8E04615B1EF3F6F500E89CD6 /* TCPClient.hpp */,
 				8E04615A1EF3F6F500E89CD6 /* TCPClient.cpp */,
+				8E04615F1EF4026F00E89CD6 /* Debug.hpp */,
+				8E04615E1EF4026F00E89CD6 /* Debug.cpp */,
 			);
 			path = "Mac TCP Client Sample";
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 			files = (
 				8E04615D1EF3F6F500E89CD6 /* TCPClient.cpp in Sources */,
 				8E04615C1EF3F6F500E89CD6 /* client_main.cpp in Sources */,
+				8E0461601EF4026F00E89CD6 /* Debug.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +263,7 @@
 				8E0461581EF3F6DF00E89CD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
