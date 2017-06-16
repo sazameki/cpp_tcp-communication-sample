@@ -8,10 +8,6 @@
 #include "TCPServer.hpp"
 
 #include <stdexcept>
-#include <unistd.h>
-#include <sys/socket.h>
-#include <sys/types.h>
-#include <netinet/in.h>
 
 
 /*!
@@ -72,7 +68,11 @@ void TCPServer::Close()
     if (isClosed) {
         return;
     }
+#ifdef _WIN32
+    closesocket(serverSocket);
+#else
     close(serverSocket);
+#endif
     serverSocket = -1;
     isClosed = true;
 }
@@ -84,8 +84,8 @@ void TCPServer::Close()
 TCPClient *TCPServer::Accept()
 {
     sockaddr_in clientAddr;
-    unsigned int addrLen = sizeof(clientAddr);
-    int sock = accept(serverSocket, (struct sockaddr *)&clientAddr, &addrLen);
+    socklen_t addrLen = sizeof(clientAddr);
+    int sock = accept(serverSocket, (sockaddr *)&clientAddr, &addrLen);
     if (sock == -1) {
         Close();
         throw std::runtime_error("Failed to accept a TCP client.");

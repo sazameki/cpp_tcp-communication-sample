@@ -16,6 +16,8 @@ int main()
         
         for (int i = 0; i < 10; i++) {
             client->Send("Hello!!\r\n");
+            std::string reply = client->ReceiveString();
+            DebugLog("[Reply] \"%s\"", reply.c_str());
         }
         
         delete client;

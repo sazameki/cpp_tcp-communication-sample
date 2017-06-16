@@ -140,12 +140,14 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Debug.hpp" />
     <ClInclude Include="..\..\TCPClient.hpp" />
     <ClInclude Include="..\..\TCPServer.hpp" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Debug.cpp" />
     <ClCompile Include="..\..\server_main.cpp" />
     <ClCompile Include="..\..\TCPClient.cpp" />
     <ClCompile Include="..\..\TCPServer.cpp" />

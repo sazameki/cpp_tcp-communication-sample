@@ -12,11 +12,18 @@
 #include <string>
 
 #ifdef _WIN32
+#ifndef WINSOCK_H
+#define WINSOCK_H
 #include <WinSock2.h>
+#include <WS2tcpip.h>
 #include <BaseTsd.h>
 typedef SSIZE_T ssize_t;
+#endif /* WINSOCK_H */
 #else
 #include <netinet/in.h>
+#include <unistd.h>
+#include <sys/socket.h>
+#include <sys/types.h>
 #endif
 
 #define TCP_CLIENT_BUFFER_SIZE  1024
