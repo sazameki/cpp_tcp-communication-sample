@@ -1,6 +1,7 @@
 #include <cstdio>
 #include <iostream>
 #ifdef _WIN32
+// windows.hとWinSock2.hを同時にインクルードする場合、以下のマクロを定義するかwindows.hをWinSock2.hの後に定義する必要があります。
 #define _WINSOCKAPI_
 #include <windows.h>
 #else
