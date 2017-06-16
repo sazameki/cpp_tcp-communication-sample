@@ -3,17 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E0461151EF3CB5200E89CD6 /* TCPServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0461111EF3CB5200E89CD6 /* TCPServer.cpp */; };
-		8E0461161EF3CB5200E89CD6 /* TCPClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0461121EF3CB5200E89CD6 /* TCPClient.cpp */; };
-		8EC96CE91EF3CAEA003DA2B3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EC96CE81EF3CAEA003DA2B3 /* main.cpp */; };
+		8E04617B1EF41DD900E89CD6 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0461741EF41DD900E89CD6 /* Debug.cpp */; };
+		8E04617C1EF41DD900E89CD6 /* server_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0461751EF41DD900E89CD6 /* server_main.cpp */; };
+		8E04617D1EF41DD900E89CD6 /* TCPClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0461761EF41DD900E89CD6 /* TCPClient.cpp */; };
+		8E04617E1EF41DD900E89CD6 /* TCPServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0461781EF41DD900E89CD6 /* TCPServer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8EC96CE31EF3CAEA003DA2B3 /* CopyFiles */ = {
+		8E0461681EF41DBD00E89CD6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,16 +26,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8E0461111EF3CB5200E89CD6 /* TCPServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TCPServer.cpp; path = ../../TCPServer.cpp; sourceTree = "<group>"; };
-		8E0461121EF3CB5200E89CD6 /* TCPClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TCPClient.cpp; path = ../../TCPClient.cpp; sourceTree = "<group>"; };
-		8E0461131EF3CB5200E89CD6 /* TCPClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TCPClient.hpp; path = ../../TCPClient.hpp; sourceTree = "<group>"; };
-		8E0461141EF3CB5200E89CD6 /* TCPServer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TCPServer.hpp; path = ../../TCPServer.hpp; sourceTree = "<group>"; };
-		8EC96CE51EF3CAEA003DA2B3 /* TCP Server Sample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "TCP Server Sample"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EC96CE81EF3CAEA003DA2B3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8E04616A1EF41DBD00E89CD6 /* Mac TCP Server Sample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Mac TCP Server Sample"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E0461741EF41DD900E89CD6 /* Debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Debug.cpp; path = ../../Debug.cpp; sourceTree = "<group>"; };
+		8E0461751EF41DD900E89CD6 /* server_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = server_main.cpp; path = ../../server_main.cpp; sourceTree = "<group>"; };
+		8E0461761EF41DD900E89CD6 /* TCPClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TCPClient.cpp; path = ../../TCPClient.cpp; sourceTree = "<group>"; };
+		8E0461771EF41DD900E89CD6 /* TCPClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TCPClient.hpp; path = ../../TCPClient.hpp; sourceTree = "<group>"; };
+		8E0461781EF41DD900E89CD6 /* TCPServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TCPServer.cpp; path = ../../TCPServer.cpp; sourceTree = "<group>"; };
+		8E0461791EF41DD900E89CD6 /* Debug.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Debug.hpp; path = ../../Debug.hpp; sourceTree = "<group>"; };
+		8E04617A1EF41DD900E89CD6 /* TCPServer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TCPServer.hpp; path = ../../TCPServer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8EC96CE21EF3CAEA003DA2B3 /* Frameworks */ = {
+		8E0461671EF41DBD00E89CD6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,112 +47,115 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8EC96CDC1EF3CAEA003DA2B3 = {
+		8E0461611EF41DBD00E89CD6 = {
 			isa = PBXGroup;
 			children = (
-				8EC96CE71EF3CAEA003DA2B3 /* TCP Server Sample */,
-				8EC96CE61EF3CAEA003DA2B3 /* Products */,
+				8E04616C1EF41DBD00E89CD6 /* Mac TCP Server Sample */,
+				8E04616B1EF41DBD00E89CD6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8EC96CE61EF3CAEA003DA2B3 /* Products */ = {
+		8E04616B1EF41DBD00E89CD6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8EC96CE51EF3CAEA003DA2B3 /* TCP Server Sample */,
+				8E04616A1EF41DBD00E89CD6 /* Mac TCP Server Sample */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8EC96CE71EF3CAEA003DA2B3 /* TCP Server Sample */ = {
+		8E04616C1EF41DBD00E89CD6 /* Mac TCP Server Sample */ = {
 			isa = PBXGroup;
 			children = (
-				8EC96CE81EF3CAEA003DA2B3 /* main.cpp */,
-				8E0461131EF3CB5200E89CD6 /* TCPClient.hpp */,
-				8E0461121EF3CB5200E89CD6 /* TCPClient.cpp */,
-				8E0461141EF3CB5200E89CD6 /* TCPServer.hpp */,
-				8E0461111EF3CB5200E89CD6 /* TCPServer.cpp */,
+				8E0461751EF41DD900E89CD6 /* server_main.cpp */,
+				8E0461771EF41DD900E89CD6 /* TCPClient.hpp */,
+				8E0461761EF41DD900E89CD6 /* TCPClient.cpp */,
+				8E04617A1EF41DD900E89CD6 /* TCPServer.hpp */,
+				8E0461781EF41DD900E89CD6 /* TCPServer.cpp */,
+				8E0461791EF41DD900E89CD6 /* Debug.hpp */,
+				8E0461741EF41DD900E89CD6 /* Debug.cpp */,
 			);
-			path = "TCP Server Sample";
+			path = "Mac TCP Server Sample";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8EC96CE41EF3CAEA003DA2B3 /* TCP Server Sample */ = {
+		8E0461691EF41DBD00E89CD6 /* Mac TCP Server Sample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8EC96CEC1EF3CAEA003DA2B3 /* Build configuration list for PBXNativeTarget "TCP Server Sample" */;
+			buildConfigurationList = 8E0461711EF41DBD00E89CD6 /* Build configuration list for PBXNativeTarget "Mac TCP Server Sample" */;
 			buildPhases = (
-				8EC96CE11EF3CAEA003DA2B3 /* Sources */,
-				8EC96CE21EF3CAEA003DA2B3 /* Frameworks */,
-				8EC96CE31EF3CAEA003DA2B3 /* CopyFiles */,
+				8E0461661EF41DBD00E89CD6 /* Sources */,
+				8E0461671EF41DBD00E89CD6 /* Frameworks */,
+				8E0461681EF41DBD00E89CD6 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "TCP Server Sample";
-			productName = "TCP Server Sample";
-			productReference = 8EC96CE51EF3CAEA003DA2B3 /* TCP Server Sample */;
+			name = "Mac TCP Server Sample";
+			productName = "Mac TCP Server Sample";
+			productReference = 8E04616A1EF41DBD00E89CD6 /* Mac TCP Server Sample */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8EC96CDD1EF3CAEA003DA2B3 /* Project object */ = {
+		8E0461621EF41DBD00E89CD6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Satoshi Numata";
 				TargetAttributes = {
-					8EC96CE41EF3CAEA003DA2B3 = {
-						CreatedOnToolsVersion = 9.0;
+					8E0461691EF41DBD00E89CD6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XF9AB35UYQ;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 8EC96CE01EF3CAEA003DA2B3 /* Build configuration list for PBXProject "TCP Server Sample" */;
-			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = en;
+			buildConfigurationList = 8E0461651EF41DBD00E89CD6 /* Build configuration list for PBXProject "Mac TCP Server Sample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 8EC96CDC1EF3CAEA003DA2B3;
-			productRefGroup = 8EC96CE61EF3CAEA003DA2B3 /* Products */;
+			mainGroup = 8E0461611EF41DBD00E89CD6;
+			productRefGroup = 8E04616B1EF41DBD00E89CD6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8EC96CE41EF3CAEA003DA2B3 /* TCP Server Sample */,
+				8E0461691EF41DBD00E89CD6 /* Mac TCP Server Sample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8EC96CE11EF3CAEA003DA2B3 /* Sources */ = {
+		8E0461661EF41DBD00E89CD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E0461161EF3CB5200E89CD6 /* TCPClient.cpp in Sources */,
-				8E0461151EF3CB5200E89CD6 /* TCPServer.cpp in Sources */,
-				8EC96CE91EF3CAEA003DA2B3 /* main.cpp in Sources */,
+				8E04617E1EF41DD900E89CD6 /* TCPServer.cpp in Sources */,
+				8E04617D1EF41DD900E89CD6 /* TCPClient.cpp in Sources */,
+				8E04617B1EF41DD900E89CD6 /* Debug.cpp in Sources */,
+				8E04617C1EF41DD900E89CD6 /* server_main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		8EC96CEA1EF3CAEA003DA2B3 /* Debug */ = {
+		8E04616F1EF41DBD00E89CD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -158,18 +164,15 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -190,19 +193,17 @@
 			};
 			name = Debug;
 		};
-		8EC96CEB1EF3CAEA003DA2B3 /* Release */ = {
+		8E0461701EF41DBD00E89CD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -211,18 +212,15 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -236,7 +234,7 @@
 			};
 			name = Release;
 		};
-		8EC96CED1EF3CAEA003DA2B3 /* Debug */ = {
+		8E0461721EF41DBD00E89CD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = XF9AB35UYQ;
@@ -244,7 +242,7 @@
 			};
 			name = Debug;
 		};
-		8EC96CEE1EF3CAEA003DA2B3 /* Release */ = {
+		8E0461731EF41DBD00E89CD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = XF9AB35UYQ;
@@ -255,25 +253,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8EC96CE01EF3CAEA003DA2B3 /* Build configuration list for PBXProject "TCP Server Sample" */ = {
+		8E0461651EF41DBD00E89CD6 /* Build configuration list for PBXProject "Mac TCP Server Sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8EC96CEA1EF3CAEA003DA2B3 /* Debug */,
-				8EC96CEB1EF3CAEA003DA2B3 /* Release */,
+				8E04616F1EF41DBD00E89CD6 /* Debug */,
+				8E0461701EF41DBD00E89CD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8EC96CEC1EF3CAEA003DA2B3 /* Build configuration list for PBXNativeTarget "TCP Server Sample" */ = {
+		8E0461711EF41DBD00E89CD6 /* Build configuration list for PBXNativeTarget "Mac TCP Server Sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8EC96CED1EF3CAEA003DA2B3 /* Debug */,
-				8EC96CEE1EF3CAEA003DA2B3 /* Release */,
+				8E0461721EF41DBD00E89CD6 /* Debug */,
+				8E0461731EF41DBD00E89CD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8EC96CDD1EF3CAEA003DA2B3 /* Project object */;
+	rootObject = 8E0461621EF41DBD00E89CD6 /* Project object */;
 }

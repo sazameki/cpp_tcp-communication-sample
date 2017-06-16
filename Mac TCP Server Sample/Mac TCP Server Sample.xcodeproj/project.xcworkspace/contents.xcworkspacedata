@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TCP Server Sample.xcodeproj">
+      location = "self:Mac TCP Server Sample.xcodeproj">
    </FileRef>
 </Workspace>
