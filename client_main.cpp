@@ -2,6 +2,7 @@
 #include <cstdio>
 
 #include "TCPClient.hpp"
+#include "Debug.hpp"
 
 int main()
 {
@@ -11,7 +12,7 @@ int main()
 #endif
 
     try {
-        TCPClient *client = new TCPClient("10.211.55.2", 12345);
+        TCPClient *client = new TCPClient("127.0.0.1", 12345);
         
         for (int i = 0; i < 10; i++) {
             client->Send("Hello!!\r\n");
@@ -19,7 +20,11 @@ int main()
         
         delete client;
     } catch (std::exception& e) {
-        printf("Error: %s\n", e.what());
+        DebugLog("Error: %s", e.what());
+#ifdef _WIN32
+        WSACleanup();
+#endif
+        return -1;
     }
 
 #ifdef _WIN32
