@@ -13,6 +13,18 @@ C++でTCP/IPの通信を行うサーバ実装とクライアント実装のサ�
 - TCPClient.hpp
 - TCPClient.cpp
 
+```
+TCPClient *client = new TCPClient("127.0.0.1", 12345);
+
+// データの送信
+client->Send("Hello!!\r\n");
+
+// データの受信
+std::string reply = client->ReceiveString();
+...        
+delete client;
+```
+
 ※ Windows環境では、アプリケーションの起動時と終了時に、WinSockの初期化とクリーンアップのための関数呼び出しが必要になることに注意してください。
 
 ## サーバについて
@@ -21,5 +33,17 @@ C++でTCP/IPの通信を行うサーバ実装とクライアント実装のサ�
 - TCPClient.cpp
 - TCPServer.hpp
 - TCPServer.cpp
+
+```
+TCPServer *server = new TCPServer(12345);
+        
+bool isRunning = true;
+while (isRunning) {
+     TCPClient *client = server->Accept();
+     /* clientで表されるクライアント用のスレッドをここで作成する。通信方法は上のクライアントと同様。 */
+}
+
+delete server;
+```
 
 ※ Windows環境では、アプリケーションの起動時と終了時に、WinSockの初期化とクリーンアップのための関数呼び出しが必要になることに注意してください。
