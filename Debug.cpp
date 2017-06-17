@@ -1,3 +1,10 @@
+//
+//  Debug.cpp
+//
+//  Created by numata on 2017/06/15.
+//  Copyright © 2017 Satoshi Numata. All rights reserved.
+//
+
 #include "Debug.hpp"
 
 #include <cstdio>
