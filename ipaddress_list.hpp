@@ -18,7 +18,6 @@
 #include <iptypes.h>
 #include <iphlpapi.h>
 #pragma comment( lib, "ws2_32.lib" )
-#pragma comment( lib, "Iphlpapi.lib" )
 #else
 #include <ifaddrs.h>    // getifaddrs()
 #include <netdb.h>      // NI_MAXHOST
