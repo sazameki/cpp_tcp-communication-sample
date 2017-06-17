@@ -12,13 +12,11 @@
 #include <string>
 
 #ifdef _WIN32
-#ifndef WINSOCK_H
-#define WINSOCK_H
+#define _WINSOCK_DEPRECATED_NO_WARNINGS
 #include <WinSock2.h>
 #include <WS2tcpip.h>
 #include <BaseTsd.h>
 typedef SSIZE_T ssize_t;
-#endif /* WINSOCK_H */
 #else
 #include <netinet/in.h>
 #include <unistd.h>

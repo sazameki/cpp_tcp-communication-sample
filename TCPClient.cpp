@@ -51,7 +51,7 @@ TCPClient::TCPClient(const std::string& hostname_, int port_, bool useDelay)
     isClosed = true;
     
     // ソケットの作成
-    sock = socket(AF_INET, SOCK_STREAM, 0);
+    sock = (int)socket(AF_INET, SOCK_STREAM, 0);
     if (sock == -1) {
         throw std::runtime_error("Failed to create a socket.");
     }
@@ -168,7 +168,12 @@ bool TCPClient::IsConnected() const
  */
 ssize_t TCPClient::Receive(char *inBuffer, size_t bufferSize)
 {
-    ssize_t len = recv(sock, inBuffer, bufferSize, 0);
+#ifdef _WIN32
+    int theBufferSize = (int)bufferSize;
+#else
+    size_t theBufferSize = bufferSize;
+#endif
+    ssize_t len = recv(sock, inBuffer, theBufferSize, 0);
     if (len <= 0) {
         Close();
     }
@@ -234,7 +239,12 @@ ssize_t TCPClient::Send(char *buffer, size_t length)
     if (isClosed) {
         throw std::runtime_error("TCPClient::Send() was called after the socket is closed.");
     }
-    ssize_t len = send(sock, buffer, length, 0);
+#ifdef _WIN32
+    int theLength = (int)length;
+#else
+    size_t theLength = length;
+#endif
+    ssize_t len = send(sock, buffer, theLength, 0);
     if (len <= 0) {
         Close();
     }

@@ -21,7 +21,7 @@ TCPServer::TCPServer(int port_)
     port = port_;
 
     // ソケットの作成
-    serverSocket = socket(AF_INET, SOCK_STREAM, 0);
+    serverSocket = (int)socket(AF_INET, SOCK_STREAM, 0);
     if (serverSocket == -1) {
         throw std::runtime_error("Failed to create a server socket.");
     }
@@ -85,7 +85,7 @@ TCPClient *TCPServer::Accept()
 {
     sockaddr_in clientAddr;
     socklen_t addrLen = sizeof(clientAddr);
-    int sock = accept(serverSocket, (sockaddr *)&clientAddr, &addrLen);
+    int sock = (int)accept(serverSocket, (sockaddr *)&clientAddr, &addrLen);
     if (sock == -1) {
         Close();
         throw std::runtime_error("Failed to accept a TCP client.");
