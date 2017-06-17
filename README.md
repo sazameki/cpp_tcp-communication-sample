@@ -1,6 +1,6 @@
 # cpp_tcp-communication-sample
 
-C++でTCP/IPの通信を行うサーバ実装とクライアント実装のサンプルプログラムです。
+C++でTCP/IPの通信を行うサーバ実装とクライアント実装のサンプルプログラムです。macOSのXcode上で使用可能なBSDソケットベースで作成し、Visual Studio上でもコンパイルできるようにWinSockへの対応を加えています。
 
 
 ## 開発環境
