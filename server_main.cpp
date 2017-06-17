@@ -1,7 +1,7 @@
 #include <cstdio>
 #include <iostream>
 #ifdef _WIN32
-// windows.h��WinSock2.h�𓯎��ɃC���N���[�h����ꍇ�A�ȉ��̃}�N�����`���邩windows.h��WinSock2.h�̌�ɒ�`����K�v������܂��B
+// windows.hとWinSock2.hを同時にインクルードする場合、以下のマクロを定義するかwindows.hをWinSock2.hの後に定義する必要があります。
 #define _WINSOCKAPI_
 #include <windows.h>
 #else
@@ -9,6 +9,7 @@
 #endif
 
 #include "TCPServer.hpp"
+#include "ipaddress_list.hpp"
 #include "Debug.hpp"
 
 
@@ -25,6 +26,14 @@ int main()
     WSADATA wsaData;
     WSAStartup(MAKEWORD(2, 0), &wsaData);
 #endif
+
+    DebugLog("Local IP Address:");
+    auto addrMap = GetLocalIpAddresses();
+    for (auto keyValue : addrMap) {
+        auto key = keyValue.first;
+        auto value = keyValue.second;
+        DebugLog("  - %s (%s)", value.c_str(), key.c_str());
+    }
 
     try {
         int port = 12345;

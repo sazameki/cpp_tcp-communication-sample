@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E04617B1EF41DD900E89CD6 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0461741EF41DD900E89CD6 /* Debug.cpp */; };
-		8E04617C1EF41DD900E89CD6 /* server_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0461751EF41DD900E89CD6 /* server_main.cpp */; };
-		8E04617D1EF41DD900E89CD6 /* TCPClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0461761EF41DD900E89CD6 /* TCPClient.cpp */; };
-		8E04617E1EF41DD900E89CD6 /* TCPServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0461781EF41DD900E89CD6 /* TCPServer.cpp */; };
+		8EB7E0CF1EF5376B0001C334 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EB7E0C81EF5376B0001C334 /* Debug.cpp */; };
+		8EB7E0D01EF5376B0001C334 /* server_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EB7E0CA1EF5376B0001C334 /* server_main.cpp */; };
+		8EB7E0D11EF5376B0001C334 /* TCPClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EB7E0CB1EF5376B0001C334 /* TCPClient.cpp */; };
+		8EB7E0D21EF5376B0001C334 /* TCPServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EB7E0CD1EF5376B0001C334 /* TCPServer.cpp */; };
+		8EB7E0D51EF537B50001C334 /* ipaddress_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EB7E0D31EF537B50001C334 /* ipaddress_list.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8E0461681EF41DBD00E89CD6 /* CopyFiles */ = {
+		8EB7E0BC1EF5375C0001C334 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -26,18 +27,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8E04616A1EF41DBD00E89CD6 /* Mac TCP Server Sample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Mac TCP Server Sample"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E0461741EF41DD900E89CD6 /* Debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Debug.cpp; path = ../../Debug.cpp; sourceTree = "<group>"; };
-		8E0461751EF41DD900E89CD6 /* server_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = server_main.cpp; path = ../../server_main.cpp; sourceTree = "<group>"; };
-		8E0461761EF41DD900E89CD6 /* TCPClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TCPClient.cpp; path = ../../TCPClient.cpp; sourceTree = "<group>"; };
-		8E0461771EF41DD900E89CD6 /* TCPClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TCPClient.hpp; path = ../../TCPClient.hpp; sourceTree = "<group>"; };
-		8E0461781EF41DD900E89CD6 /* TCPServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TCPServer.cpp; path = ../../TCPServer.cpp; sourceTree = "<group>"; };
-		8E0461791EF41DD900E89CD6 /* Debug.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Debug.hpp; path = ../../Debug.hpp; sourceTree = "<group>"; };
-		8E04617A1EF41DD900E89CD6 /* TCPServer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TCPServer.hpp; path = ../../TCPServer.hpp; sourceTree = "<group>"; };
+		8EB7E0BE1EF5375C0001C334 /* Mac TCP Server Sample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Mac TCP Server Sample"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB7E0C81EF5376B0001C334 /* Debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Debug.cpp; path = ../../Debug.cpp; sourceTree = "<group>"; };
+		8EB7E0C91EF5376B0001C334 /* Debug.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Debug.hpp; path = ../../Debug.hpp; sourceTree = "<group>"; };
+		8EB7E0CA1EF5376B0001C334 /* server_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = server_main.cpp; path = ../../server_main.cpp; sourceTree = "<group>"; };
+		8EB7E0CB1EF5376B0001C334 /* TCPClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TCPClient.cpp; path = ../../TCPClient.cpp; sourceTree = "<group>"; };
+		8EB7E0CC1EF5376B0001C334 /* TCPClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TCPClient.hpp; path = ../../TCPClient.hpp; sourceTree = "<group>"; };
+		8EB7E0CD1EF5376B0001C334 /* TCPServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TCPServer.cpp; path = ../../TCPServer.cpp; sourceTree = "<group>"; };
+		8EB7E0CE1EF5376B0001C334 /* TCPServer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = TCPServer.hpp; path = ../../TCPServer.hpp; sourceTree = "<group>"; };
+		8EB7E0D31EF537B50001C334 /* ipaddress_list.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ipaddress_list.cpp; path = ../../ipaddress_list.cpp; sourceTree = "<group>"; };
+		8EB7E0D41EF537B50001C334 /* ipaddress_list.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ipaddress_list.hpp; path = ../../ipaddress_list.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8E0461671EF41DBD00E89CD6 /* Frameworks */ = {
+		8EB7E0BB1EF5375C0001C334 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,32 +50,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8E0461611EF41DBD00E89CD6 = {
+		8EB7E0B51EF5375C0001C334 = {
 			isa = PBXGroup;
 			children = (
-				8E04616C1EF41DBD00E89CD6 /* Mac TCP Server Sample */,
-				8E04616B1EF41DBD00E89CD6 /* Products */,
+				8EB7E0C01EF5375C0001C334 /* Mac TCP Server Sample */,
+				8EB7E0BF1EF5375C0001C334 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8E04616B1EF41DBD00E89CD6 /* Products */ = {
+		8EB7E0BF1EF5375C0001C334 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8E04616A1EF41DBD00E89CD6 /* Mac TCP Server Sample */,
+				8EB7E0BE1EF5375C0001C334 /* Mac TCP Server Sample */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8E04616C1EF41DBD00E89CD6 /* Mac TCP Server Sample */ = {
+		8EB7E0C01EF5375C0001C334 /* Mac TCP Server Sample */ = {
 			isa = PBXGroup;
 			children = (
-				8E0461751EF41DD900E89CD6 /* server_main.cpp */,
-				8E0461771EF41DD900E89CD6 /* TCPClient.hpp */,
-				8E0461761EF41DD900E89CD6 /* TCPClient.cpp */,
-				8E04617A1EF41DD900E89CD6 /* TCPServer.hpp */,
-				8E0461781EF41DD900E89CD6 /* TCPServer.cpp */,
-				8E0461791EF41DD900E89CD6 /* Debug.hpp */,
-				8E0461741EF41DD900E89CD6 /* Debug.cpp */,
+				8EB7E0CA1EF5376B0001C334 /* server_main.cpp */,
+				8EB7E0CC1EF5376B0001C334 /* TCPClient.hpp */,
+				8EB7E0CB1EF5376B0001C334 /* TCPClient.cpp */,
+				8EB7E0CE1EF5376B0001C334 /* TCPServer.hpp */,
+				8EB7E0CD1EF5376B0001C334 /* TCPServer.cpp */,
+				8EB7E0D41EF537B50001C334 /* ipaddress_list.hpp */,
+				8EB7E0D31EF537B50001C334 /* ipaddress_list.cpp */,
+				8EB7E0C91EF5376B0001C334 /* Debug.hpp */,
+				8EB7E0C81EF5376B0001C334 /* Debug.cpp */,
 			);
 			path = "Mac TCP Server Sample";
 			sourceTree = "<group>";
@@ -80,13 +85,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8E0461691EF41DBD00E89CD6 /* Mac TCP Server Sample */ = {
+		8EB7E0BD1EF5375C0001C334 /* Mac TCP Server Sample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E0461711EF41DBD00E89CD6 /* Build configuration list for PBXNativeTarget "Mac TCP Server Sample" */;
+			buildConfigurationList = 8EB7E0C51EF5375C0001C334 /* Build configuration list for PBXNativeTarget "Mac TCP Server Sample" */;
 			buildPhases = (
-				8E0461661EF41DBD00E89CD6 /* Sources */,
-				8E0461671EF41DBD00E89CD6 /* Frameworks */,
-				8E0461681EF41DBD00E89CD6 /* CopyFiles */,
+				8EB7E0BA1EF5375C0001C334 /* Sources */,
+				8EB7E0BB1EF5375C0001C334 /* Frameworks */,
+				8EB7E0BC1EF5375C0001C334 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -94,58 +99,59 @@
 			);
 			name = "Mac TCP Server Sample";
 			productName = "Mac TCP Server Sample";
-			productReference = 8E04616A1EF41DBD00E89CD6 /* Mac TCP Server Sample */;
+			productReference = 8EB7E0BE1EF5375C0001C334 /* Mac TCP Server Sample */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8E0461621EF41DBD00E89CD6 /* Project object */ = {
+		8EB7E0B61EF5375C0001C334 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Satoshi Numata";
 				TargetAttributes = {
-					8E0461691EF41DBD00E89CD6 = {
+					8EB7E0BD1EF5375C0001C334 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = XF9AB35UYQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 8E0461651EF41DBD00E89CD6 /* Build configuration list for PBXProject "Mac TCP Server Sample" */;
+			buildConfigurationList = 8EB7E0B91EF5375C0001C334 /* Build configuration list for PBXProject "Mac TCP Server Sample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 8E0461611EF41DBD00E89CD6;
-			productRefGroup = 8E04616B1EF41DBD00E89CD6 /* Products */;
+			mainGroup = 8EB7E0B51EF5375C0001C334;
+			productRefGroup = 8EB7E0BF1EF5375C0001C334 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8E0461691EF41DBD00E89CD6 /* Mac TCP Server Sample */,
+				8EB7E0BD1EF5375C0001C334 /* Mac TCP Server Sample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8E0461661EF41DBD00E89CD6 /* Sources */ = {
+		8EB7E0BA1EF5375C0001C334 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E04617E1EF41DD900E89CD6 /* TCPServer.cpp in Sources */,
-				8E04617D1EF41DD900E89CD6 /* TCPClient.cpp in Sources */,
-				8E04617B1EF41DD900E89CD6 /* Debug.cpp in Sources */,
-				8E04617C1EF41DD900E89CD6 /* server_main.cpp in Sources */,
+				8EB7E0D21EF5376B0001C334 /* TCPServer.cpp in Sources */,
+				8EB7E0D11EF5376B0001C334 /* TCPClient.cpp in Sources */,
+				8EB7E0D51EF537B50001C334 /* ipaddress_list.cpp in Sources */,
+				8EB7E0CF1EF5376B0001C334 /* Debug.cpp in Sources */,
+				8EB7E0D01EF5376B0001C334 /* server_main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		8E04616F1EF41DBD00E89CD6 /* Debug */ = {
+		8EB7E0C31EF5375C0001C334 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -193,7 +199,7 @@
 			};
 			name = Debug;
 		};
-		8E0461701EF41DBD00E89CD6 /* Release */ = {
+		8EB7E0C41EF5375C0001C334 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +240,7 @@
 			};
 			name = Release;
 		};
-		8E0461721EF41DBD00E89CD6 /* Debug */ = {
+		8EB7E0C61EF5375C0001C334 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = XF9AB35UYQ;
@@ -242,7 +248,7 @@
 			};
 			name = Debug;
 		};
-		8E0461731EF41DBD00E89CD6 /* Release */ = {
+		8EB7E0C71EF5375C0001C334 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = XF9AB35UYQ;
@@ -253,24 +259,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8E0461651EF41DBD00E89CD6 /* Build configuration list for PBXProject "Mac TCP Server Sample" */ = {
+		8EB7E0B91EF5375C0001C334 /* Build configuration list for PBXProject "Mac TCP Server Sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8E04616F1EF41DBD00E89CD6 /* Debug */,
-				8E0461701EF41DBD00E89CD6 /* Release */,
+				8EB7E0C31EF5375C0001C334 /* Debug */,
+				8EB7E0C41EF5375C0001C334 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E0461711EF41DBD00E89CD6 /* Build configuration list for PBXNativeTarget "Mac TCP Server Sample" */ = {
+		8EB7E0C51EF5375C0001C334 /* Build configuration list for PBXNativeTarget "Mac TCP Server Sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8E0461721EF41DBD00E89CD6 /* Debug */,
-				8E0461731EF41DBD00E89CD6 /* Release */,
+				8EB7E0C61EF5375C0001C334 /* Debug */,
+				8EB7E0C71EF5375C0001C334 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8E0461621EF41DBD00E89CD6 /* Project object */;
+	rootObject = 8EB7E0B61EF5375C0001C334 /* Project object */;
 }
