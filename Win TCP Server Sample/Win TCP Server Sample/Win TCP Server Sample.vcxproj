@@ -145,6 +145,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Debug.hpp" />
+    <ClInclude Include="..\..\ipaddress_list.hpp" />
     <ClInclude Include="..\..\TCPClient.hpp" />
     <ClInclude Include="..\..\TCPServer.hpp" />
     <ClInclude Include="stdafx.h" />
@@ -152,6 +153,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Debug.cpp" />
+    <ClCompile Include="..\..\ipaddress_list.cpp" />
     <ClCompile Include="..\..\server_main.cpp" />
     <ClCompile Include="..\..\TCPClient.cpp" />
     <ClCompile Include="..\..\TCPServer.cpp" />
